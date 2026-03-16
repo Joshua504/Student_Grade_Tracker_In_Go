@@ -42,8 +42,6 @@ func main(){
 			fmt.Println("not a number")
 			continue
 		}
-		
-
 		storage[trimName] = toDigit
 
 	}
@@ -64,6 +62,7 @@ func main(){
 		builder.WriteString(line)
 	}
 
+	fmt.Println("check the result.txt file for the RESULT")
 	finalResult := builder.String()
 
 	os.WriteFile("result.txt", []byte(finalResult), 0644)
